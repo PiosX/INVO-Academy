@@ -1,0 +1,141 @@
+.card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 41.3rem;
+	border-radius: 20px;
+	overflow: hidden;
+	background: var(--color-box);
+	transition: transform 0.3s;
+	&:hover {
+		transform: translate(-50%, -52%);
+	}
+	@include media("<phone") {
+		width: 35rem;
+	}
+	@include media(">phone") {
+		width: 41.3rem;
+	}
+	@include media("<fold") {
+		width: 27rem;
+	}
+	&__bg {
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+		&__img {
+			width: 100%;
+		}
+	}
+	&__content {
+		padding-top: 58.5%;
+		margin: 0 8%;
+		&__title {
+			position: relative;
+			font-size: 2.4rem;
+			font-weight: 600;
+			line-height: 2.4rem;
+			letter-spacing: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: initial;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			transition: color 0.3s;
+			cursor: pointer;
+			&:hover {
+				color: var(--color-primary);
+			}
+		}
+		&__desc {
+			width: 78%;
+			padding-top: 3%;
+			font-size: 1.8rem;
+			font-weight: 500;
+			line-height: 160%;
+			letter-spacing: -0.01rem;
+			color: var(--color-body);
+			@include media("<tablet") {
+				font-size: 1.6rem;
+			}
+		}
+	}
+	&__wrap-data {
+		display: flex;
+		justify-content: space-between;
+		margin: 4rem 3rem 0;
+	}
+	&__price {
+		display: flex;
+		align-items: center;
+		&__icon {
+			margin-left: 0.4rem;
+		}
+		&__number {
+			font-size: 1.8rem;
+			font-weight: 600;
+			line-height: 160%;
+			letter-spacing: -0.01rem;
+			color: var(--color-primary);
+			padding-left: 1rem;
+			@include media("<tablet") {
+				font-size: 1.6rem;
+			}
+		}
+	}
+	&__time {
+		display: flex;
+		align-items: center;
+
+		&__text {
+			font-size: 1.6rem;
+			font-weight: 500;
+			line-height: 160%;
+			letter-spacing: -0.01rem;
+			color: var(--color-body);
+			padding-left: 1rem;
+			@include media("<tablet") {
+				font-size: 1.4rem;
+			}
+		}
+	}
+	&__line {
+		height: 1px;
+		width: 84%;
+		margin: 3rem auto 1.5rem;
+		background: var(--color-stroke);
+	}
+	&__creator {
+		display: flex;
+		align-items: center;
+		margin-left: 3.3rem;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+		&__img {
+			width: 4rem;
+			border-radius: 9rem;
+		}
+		&__text {
+			font-size: 1.6rem;
+			font-weight: 500;
+			line-height: 160%;
+			letter-spacing: -0.01rem;
+			color: var(--color-body);
+			padding-left: 1.5rem;
+			&--name {
+				font-weight: 600;
+				color: var(--color-title);
+				cursor: pointer;
+				transition: color 0.3s;
+				&:hover {
+					color: var(--color-primary);
+				}
+			}
+			@include media("<tablet") {
+				font-size: 1.4rem;
+			}
+		}
+	}
+}
