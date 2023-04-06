@@ -1,0 +1,93 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+///
+///
+
+#home-page {
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background: var(--color-background);
+}
+
+.song-preview-card {
+	margin: 30px 16px;
+	background-color: var(--color-card);
+	width: 100%;
+	height: 100%;
+	max-width: 413px;
+	max-height: 607px;
+	border-radius: 24px;
+	padding: 16px;
+	color: var(--color-text);
+
+	.song-preview-card__image-container {
+		position: relative;
+		border-radius: 16px;
+		width: 100%;
+		height: 381px;
+		overflow: hidden;
+	}
+
+	.song-preview-card__content {
+		margin-top: 7px;
+		padding: 16px;
+	}
+
+	.song-preview-card__title {
+		font-size: 24px;
+		line-height: 1.4em;
+		font-weight: 700;
+		@media (max-width: 375px) {
+			font-weight: 500;
+		}
+	}
+
+	.song-preview-card__artist-and-time {
+		margin-top: 11px;
+		padding-bottom: 24px;
+		width: 100%;
+		font-weight: 400;
+		font-size: 18px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1.5px solid var(--color-border);
+	}
+
+	&__time {
+		display: flex;
+		align-items: center;
+		&-text {
+			margin-left: 8px;
+		}
+	}
+
+	&__album-cover-and-info {
+		display: flex;
+		align-items: center;
+		padding-top: 24px;
+	}
+
+	&__album-cover-container {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	&__album-info-container {
+		display: flex;
+		gap: 6px;
+		font-size: 18px;
+		font-weight: 400;
+		margin-left: 16px;
+
+		@media (max-width: 375px) {
+			font-size: 14px;
+			font-weight: 700;
+		}
+	}
+}
