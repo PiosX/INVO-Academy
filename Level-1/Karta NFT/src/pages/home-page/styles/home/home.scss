@@ -1,141 +1,182 @@
+$_834px: 834px;
+$_375px: 375px;
+$_280px: 280px;
+
+#home-page {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
 .card {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 41.3rem;
+	position: relative;
+	display: inline-block;
+	margin: 16px auto;
+	width: 100%;
+	height: 100%;
+	max-width: 41.3rem;
+	max-height: 55.6rem;
 	border-radius: 20px;
 	overflow: hidden;
 	background: var(--color-box);
-	transition: transform 0.3s;
-	&:hover {
-		transform: translate(-50%, -52%);
-	}
-	@include media("<phone") {
-		width: 35rem;
-	}
-	@include media(">phone") {
-		width: 41.3rem;
-	}
-	@include media("<fold") {
-		width: 27rem;
-	}
-	&__bg {
+	& &__bg-img {
 		position: absolute;
-		width: 100%;
-		z-index: -1;
-		&__img {
+		width: 413px;
+		height: 399px;
+		max-width: 100%;
+		max-height: 100%;
+		z-index: 0;
+		img {
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
-	&__content {
+	& &__content {
 		padding-top: 58.5%;
 		margin: 0 8%;
-		&__title {
+		&-title {
 			position: relative;
 			font-size: 2.4rem;
 			font-weight: 600;
 			line-height: 2.4rem;
 			letter-spacing: 0;
-			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: initial;
 			display: -webkit-box;
 			-webkit-line-clamp: 3;
 			-webkit-box-orient: vertical;
+			overflow: hidden;
 			transition: color 0.3s;
 			cursor: pointer;
-			&:hover {
-				color: var(--color-primary);
-			}
 		}
-		&__desc {
+		&-desc {
+			position: relative;
 			width: 78%;
 			padding-top: 3%;
 			font-size: 1.8rem;
 			font-weight: 500;
 			line-height: 160%;
-			letter-spacing: -0.01rem;
+			letter-spacing: -0.02rem;
 			color: var(--color-body);
-			@include media("<tablet") {
-				font-size: 1.6rem;
-			}
 		}
 	}
-	&__wrap-data {
+	& &__wrap-data {
 		display: flex;
 		justify-content: space-between;
-		margin: 4rem 3rem 0;
+		margin: 4.2rem 3.2rem 0;
 	}
-	&__price {
+	& &__price {
+		position: relative;
 		display: flex;
 		align-items: center;
-		&__icon {
-			margin-left: 0.4rem;
+		&-icon {
+			margin-left: 0.1rem;
 		}
-		&__number {
+		&-number {
 			font-size: 1.8rem;
 			font-weight: 600;
 			line-height: 160%;
 			letter-spacing: -0.01rem;
 			color: var(--color-primary);
-			padding-left: 1rem;
-			@include media("<tablet") {
-				font-size: 1.6rem;
-			}
+			padding-left: 1.1rem;
 		}
 	}
-	&__time {
+	& &__time {
+		position: relative;
 		display: flex;
 		align-items: center;
 
-		&__text {
+		&-text {
 			font-size: 1.6rem;
 			font-weight: 500;
 			line-height: 160%;
 			letter-spacing: -0.01rem;
 			color: var(--color-body);
-			padding-left: 1rem;
-			@include media("<tablet") {
-				font-size: 1.4rem;
-			}
+			padding-left: 0.9rem;
+			margin-right: -0.1rem;
 		}
 	}
-	&__line {
+	& &__line {
+		position: relative;
 		height: 1px;
 		width: 84%;
 		margin: 3rem auto 1.5rem;
 		background: var(--color-stroke);
 	}
-	&__creator {
+	& &__creator {
 		display: flex;
 		align-items: center;
-		margin-left: 3.3rem;
-		padding-top: 1rem;
-		padding-bottom: 2rem;
-		&__img {
+		margin-left: 3.2rem;
+		padding-top: 1.1rem;
+		margin-bottom: 2rem;
+		&-img {
 			width: 4rem;
 			border-radius: 9rem;
 		}
-		&__text {
+		&-text {
 			font-size: 1.6rem;
 			font-weight: 500;
 			line-height: 160%;
-			letter-spacing: -0.01rem;
+			letter-spacing: -0.008rem;
 			color: var(--color-body);
-			padding-left: 1.5rem;
-			&--name {
+			padding-left: 1.7rem;
+			&--bold {
 				font-weight: 600;
 				color: var(--color-title);
 				cursor: pointer;
-				transition: color 0.3s;
-				&:hover {
-					color: var(--color-primary);
-				}
-			}
-			@include media("<tablet") {
-				font-size: 1.4rem;
 			}
 		}
+	}
+	@media screen and (max-width: $_834px) {
+		width: 100%;
+		height: 100%;
+		max-width: 34.3rem;
+		max-height: 48.6rem;
+		& &__content {
+			padding-top: 64%;
+			margin: 0 24px;
+			&-desc {
+				padding-top: 1%;
+				width: 85%;
+			}
+		}
+		& &__wrap-data {
+			margin: 2.6rem 2.2rem 0;
+		}
+		& &__price {
+			&-number {
+				font-size: 16px;
+			}
+		}
+		& &__time {
+			&-text {
+				font-size: 14px;
+				padding-left: 1rem;
+				margin-right: 1.2rem;
+			}
+		}
+		& &__line {
+			width: 295px;
+			margin: 1.9rem auto 1rem;
+		}
+		& &__creator {
+			padding-top: 1rem;
+			margin-left: 2.3rem;
+			&-text {
+				font-size: 14px;
+			}
+		}
+	}
+	@media screen and (max-width: $_375px) {
+		margin: 16px 16px;
+		// margin-top: 30px;
+		// margin-bottom: 30px;
+	}
+
+	@media screen and (max-width: $_280px) {
+		height: auto;
+		max-height: fit-content;
 	}
 }
