@@ -3,7 +3,7 @@
 
 import "../styles/index.scss";
 
-const numbers = document.querySelectorAll(".modal__points__point");
+const numbers = document.querySelectorAll(".modal__points-point");
 const button = document.querySelector(".modal__button");
 const modal = document.querySelector(".modal");
 
