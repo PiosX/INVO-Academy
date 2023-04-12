@@ -1,0 +1,141 @@
+.advantages-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 32px;
+    border: 1px solid var(--color-border);
+    padding: 24px 23px;
+    overflow: hidden;
+    margin-top: 16px;
+    @include size(1136px, 470px);
+    & &__box{
+        max-width: 352px;
+        width: 100%;
+        height: 422px;
+        background: var(--color-box);
+        border-radius: 24px;
+        overflow: hidden;
+        padding: 24px;
+        &-img-holder{
+            width: 140px;
+            height: 140px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+    }
+    & &__title{
+        width: 199px;
+        height: 47px;
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--color-text);
+        margin-top: 25px;
+        line-height: 24px;
+        letter-spacing: 0;
+        @include clamp(2);
+    }
+    & &__desc{
+        height: 73px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color-text);
+        opacity: 50%;
+        letter-spacing: -0.01em;
+        line-height: 22.4px;
+        padding-left: 1px;
+        @include clamp(3);
+    }
+    & &__button{
+        @include button(var(--color-button), var(--color-button-hover), var(--color-button-pressed));
+    }
+
+    @media screen and (max-width: $_834) {
+        flex-direction: column;
+        gap: 15px;
+        @include size(770px, 800px);
+
+        & &__box{
+            position: relative;
+            display: flex;
+            gap: 24px;
+            max-width: 722px;
+            height: 228px;
+            &-img-holder{
+                flex-shrink: 0;
+                width: 108px;
+                height: 108px;
+                border-radius: 12px;
+            }
+            &-content {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                gap: 16px;
+                width: 100%;
+            }
+        }
+        & &__title{
+            max-width: 266px;
+            width: 100%;
+            margin-top: 0;
+            padding-top: 0;
+            height: auto;
+        }
+        & &__desc{
+            width: 75%;
+            margin-top: -16px;
+            padding-top: 0;
+            padding-left: 0;
+            height: auto;
+        }
+        & &__button{
+            position: absolute;
+            bottom: 24px;
+            width: 165px;
+            gap: 7px;
+        }
+    }
+    @media screen and (max-width: $_535) {
+        & &__button{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 12px;
+            width: 165px;
+            gap: 7px;
+        }
+    }
+    @media screen and (max-width: $_375) { 
+        max-height: none;
+        height: auto;     
+        padding: 16px 16px 15px;
+        border-radius: 24px;
+        gap: 13px;
+        & &__box{
+            flex-direction: column;
+            height: 340px;
+            max-width: 311px;
+            padding: 16px;
+            border-radius: 16px;
+            &-content {
+                margin-top: -9px;
+                align-items: flex-start;
+                gap: 12px;
+            }
+        }
+        & &__desc{
+            font-size: 14px;
+            width: 90%;
+            line-height: 19.6px;
+            margin-top: -16px;
+            padding: 0;
+        }
+        & &__button{
+            margin-left: 16px;
+            transform: none;
+            left: 0;
+            bottom: 16px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+/// 
+/// 
+
+@import './utils/media-size.scss';
+@import './utils/mixins.scss';
+
+@import './components/advantages-section.scss';
+@import './components/advantage-box-component.scss';
+
+#home-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+
+  @media screen and (max-width: $_834) {
+    height: auto;
+}
+}
+

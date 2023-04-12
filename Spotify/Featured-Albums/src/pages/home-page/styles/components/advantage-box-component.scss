@@ -1,0 +1,111 @@
+.advantage-box-component{
+    @include size(1136px, 176px);
+    padding: 24px;
+    margin: 24px 0 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 32px;
+    overflow: hidden;
+    & &__wrapper{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 32px;
+        width: 100%;
+        height: 128px;
+        background: linear-gradient(90.79deg, var(--color-gradient1) -8.89%, var(--color-gradient2) 100%);
+        border-radius: 24px;
+        border: 1px solid var(--color-border-opacity);
+        overflow: hidden;
+    }
+    & &__gradient{
+        position: absolute;
+        right: 0;
+        width: 632px;
+        height: 100%;
+        background: linear-gradient(270deg, #0B280D 0%, rgba(11, 40, 13, 0) 100%);
+        z-index: 1;
+    }
+    & &__img-holder {
+        position: absolute;
+        left: 508px;
+        top: -204px;
+        width: 849px;
+        height: 555px;
+    }
+    & &__title{
+        max-width: 303px;
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--color-text);
+        margin-left: -2px;
+        margin-top: 20px;
+        line-height: 24px;
+        z-index: 2;
+    }
+    & &__button{
+        @include button(var(--color-text), var(--color-button-banner-hover), var(--color-button-banner-pressed));
+        margin-right: -2px;
+        margin-top: -1px;
+        z-index: 2;
+    }
+
+    @media screen and (max-width: $_834) {      
+        margin: 14px 0 10px;
+        & &__img-holder {
+            left: 387px;
+            top: -203px;
+            width: 849px;
+            height: 555px;
+        }
+        & &__button{
+            margin-top: 0;
+            flex-shrink: 0;
+        }
+    }
+    @media screen and (max-width: $_535) {
+        & &__button{
+            padding: 0 12px;
+            margin-right: -20px;
+        }
+    }
+    @media screen and (max-width: $_375) {      
+        @include size(343px, 232px);
+        border-radius: 24px;
+        padding: 16px;
+        & &__wrapper{
+            max-width: 311px;
+            width: 100%;
+            height: 200px;
+            border-radius: 16px;
+            padding: 0 15px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 24px;
+        }
+        & &__title{
+            max-width: 303px;
+            margin: 0;
+        }
+        & &__gradient{
+            transform: rotate(90deg) translate(-50%,-50%);
+            top: 15%;
+            left: -30%;
+            width: 146px;
+            height: 343px;
+            background: linear-gradient(270deg, #0B280D 0%, rgba(11, 40, 13, 0) 100%);
+            z-index: 1;
+        }
+        & &__img-holder {
+            left: 160px;
+            top: 77px;
+            width: 379px;
+            height: 248px;
+        }
+        & &__button{
+            padding: 0 24px;
+            margin-right: 0;
+        }
+    }
+}
