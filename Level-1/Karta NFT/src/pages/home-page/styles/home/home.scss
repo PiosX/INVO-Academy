@@ -4,9 +4,10 @@ $_280px: 280px;
 
 #home-page {
 	display: flex;
-	height: 100vh;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
+	min-height: 100vh;
 }
 
 .card {
