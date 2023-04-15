@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INVO Academy JS Starter with Vite</title>
+</head>
+
+<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+<body>
+  <div id="home-page">
+    <div class="order">
+      <div class="order__wrap-up">
+        <h1 class="order__wrap-up-title">Order summary</h1>
+        <p class="order__wrap-up-desc">Check if your order matches</p>
+      </div>
+      <div class="order__items">
+        <div class="order__item">
+          <div class="order__item-box">
+            <div class="order__item-box-img">
+              <img src="./assets/images/prod1.png" alt="product image">
+            </div>
+            <div class="order__item-box-data">
+              <p class="order__item-box-data-name"><a href="#">Nike Dunk Low Retro</a></p>
+              <div class="order__item-box-data-info">
+                <p class="order__item-box-data-info-desc">Man's shoes</p>
+                <p class="order__item-box-data-info-size">Size: 10</p>
+              </div>
+            </div>
+          </div>
+          <div class="order__item-price">
+            <p class="order__item-price-text">$100.00</p>
+          </div>
+        </div>
+        <div class="order__item">
+          <div class="order__item-box">
+            <div class="order__item-box-img">
+              <img src="./assets/images/prod2.png" alt="product image">
+            </div>
+            <div class="order__item-box-data fix-pos">
+              <p class="order__item-box-data-name"><a href="#">Nike Sportswear Therma-FIT City Series</a></p>
+              <div class="order__item-box-data-info">
+                <p class="order__item-box-data-info-desc">Woman jacket</p>
+                <p class="order__item-box-data-info-size">Size: L</p>
+              </div>
+            </div>
+          </div>
+          <div class="order__item-price">
+            <p class="order__item-price-text">$170.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="order__line"></div>
+      <div class="order__summary">
+        <div class="order__summary-cost">
+          <div class="order__summary-cost-product">
+            <p class="order__summary-cost-product-text">Product summary:
+            <p class="order__summary-cost-product-price">$70.99</p>
+          </div>
+          <div class="order__summary-cost-delivery">
+            <p class="order__summary-cost-delivery-text">Cost of delivery:</p>
+            <p class="order__summary-cost-delivery-price">$0.00</p>
+          </div>
+        </div>
+        <div class="order__summary-total">
+          <p class="order__summary-total-text">Total:</p>
+          <p class="order__summary-total-price">$70.99</p>
+        </div>
+      </div>
+      <button class="order__primary-btn" data-loading="0">
+        <div class="order__primary-btn-text">I confirm and pay</div>
+        <div class="order__primary-btn-loader">
+          <img src="./assets/icons/animated-loader.svg" alt="Loading...">
+        </div>
+      </button>
+      <a href="#"><button class="order__cancel">
+          Cancel order
+        </button></a>
+
+    </div>
+  </div>
+  </div>
+
+  <script type="module" src="/src/global-scripts/main.js"></script>
+  <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
+</body>
+
+</html>
