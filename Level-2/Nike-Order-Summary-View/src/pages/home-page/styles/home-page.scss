@@ -35,7 +35,7 @@ $_375: 375px;
 		}
 	}
 	& &__items {
-		margin-top: 47px;
+		margin-top: 49px;
 		display: flex;
 		flex-direction: column;
 		gap: 24px;
@@ -133,6 +133,7 @@ $_375: 375px;
 			justify-content: space-between;
 			font-size: 24px;
 			font-weight: 500;
+			padding-bottom: 1px;
 			&-text {
 				margin: 0;
 			}
