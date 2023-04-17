@@ -1,0 +1,362 @@
+.content {
+	margin-top: 381px;
+	margin-left: 42px;
+	margin-right: 42px;
+	& &__menu {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+		margin-bottom: 32px;
+		&-play {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 59px;
+			height: 59px;
+			border-radius: 50px;
+			overflow: hidden;
+			border: none;
+			background: var(--color-button-play);
+			cursor: pointer;
+			&-icon {
+				margin-left: 6px;
+			}
+		}
+		&-like {
+			height: 32px;
+			cursor: pointer;
+		}
+		&-more {
+			width: 52px;
+			height: 52px;
+			cursor: pointer;
+		}
+	}
+	& &__artbox {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		&-artist {
+			position: relative;
+			width: 100%;
+			height: 89px;
+			display: flex;
+			align-items: center;
+			background: var(--color-artist-bgc);
+			border-radius: 17px;
+			color: var(--color-desc);
+			padding-top: 1px;
+			cursor: pointer;
+			transition: background 0.3s;
+			&:hover {
+				background: var(--color-black-footer);
+				.content__artbox-artist-no {
+					display: none;
+				}
+				.content__artbox-artist-play {
+					display: block;
+				}
+				.content__artbox-artist-options {
+					display: flex;
+				}
+			}
+			&:active {
+				background: var(--color-black-active);
+			}
+			&-no {
+				margin: 0 32px 0 51px;
+				font-size: 18px;
+				font-weight: 400;
+			}
+			&-play {
+				display: none;
+				margin: 0 35px 0 51px;
+			}
+			&-main {
+				display: flex;
+				align-items: center;
+				gap: 32px;
+				max-width: 461px;
+				width: 100%;
+				&-box {
+					width: 56px;
+					height: 56px;
+					border-radius: 8px;
+					overflow: hidden;
+					&-img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+				&-track {
+					&-subtitle {
+						font-size: 12px;
+						font-weight: 500;
+						margin-bottom: 6px;
+					}
+					&-title {
+						font-size: 16px;
+						font-weight: 500;
+					}
+				}
+			}
+			&-creator {
+				// position: absolute;
+				// left: 615px;
+				max-width: 414px;
+				width: 100%;
+				&-text {
+					font-size: 12px;
+					font-weight: 500;
+					margin-bottom: 6px;
+				}
+				&-name {
+					font-size: 16px;
+					font-weight: 500;
+				}
+			}
+			&-time {
+				max-width: 233px;
+				width: 100%;
+				&-text {
+					font-size: 12px;
+					font-weight: 500;
+					margin-bottom: 6px;
+				}
+				&-length {
+					font-size: 16px;
+					font-weight: 500;
+				}
+			}
+			&-options {
+				display: none;
+				align-items: center;
+				gap: 18px;
+				margin-right: 50px;
+				&-like {
+					width: 24px;
+					height: 24px;
+					transition: opacity 0.3s;
+					&:hover {
+						opacity: 0.8;
+					}
+					&-img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+				&-more {
+					width: 36px;
+					height: 36px;
+					transition: opacity 0.3s;
+					&:hover {
+						opacity: 0.8;
+					}
+					&-img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+			&-menu {
+				position: absolute;
+				left: 87%;
+				top: 290%;
+				transform: translate(-50%, -50%);
+				max-width: 248px;
+				height: 368px;
+				width: 100%;
+				background: var(--color-black-footer);
+				color: var(--color-text);
+				border-radius: 8px;
+				overflow: hidden;
+				padding: 32px 33px 32px 32px;
+				font-size: 14px;
+				font-weight: 500;
+				z-index: 1;
+				&-line {
+					width: 100%;
+					height: 1px;
+					background: var(--color-black-active);
+					margin: 16px 0 10px;
+				}
+				.fix-line {
+					margin: 6px 0 0;
+				}
+				.fix-line-2 {
+					margin: 8px 0 0;
+				}
+				&-add {
+					transition: background 0.3s;
+					padding: 16px 16px;
+					margin: -16px -16px;
+					border-radius: 8px;
+					overflow: hidden;
+					&:hover {
+						background: var(--color-black-button);
+					}
+				}
+				&-goto {
+					display: flex;
+					flex-direction: column;
+					gap: 3px;
+					&-text {
+						padding: 8px 16px;
+						margin: 0 -16px;
+						border-radius: 8px;
+						overflow: hidden;
+						transition: background 0.3s;
+						&:hover {
+							background: var(--color-black-button);
+						}
+					}
+				}
+				&-auth {
+					margin-top: 10px;
+					display: flex;
+					flex-direction: column;
+					&-text {
+						padding: 8px 16px;
+						margin: 0 -16px;
+						border-radius: 8px;
+						overflow: hidden;
+						transition: background 0.3s;
+						&:hover {
+							background: var(--color-black-button);
+						}
+					}
+					&-box {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						padding: 0 16px;
+						margin: 0 -16px;
+						border-radius: 8px;
+						overflow: hidden;
+						transition: background 0.3s;
+						&:hover {
+							background: var(--color-black-button);
+						}
+						&-img {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+						&-text {
+							padding: 8px 16px;
+							margin: 0 -16px;
+						}
+					}
+				}
+				&-share {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 0 16px;
+					margin: 0 -16px;
+					margin-top: 9px;
+					border-radius: 8px;
+					overflow: hidden;
+					transition: background 0.3s;
+					&:hover {
+						background: var(--color-black-button);
+					}
+					&-text {
+						padding: 8px 16px;
+						margin: 0 -16px;
+					}
+					&-img {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+				}
+				&[data-show="0"] {
+					display: none;
+				}
+				&[data-show="1"] {
+					display: block;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $_834) {
+		margin-top: 365px;
+		margin-left: 8px;
+		margin-right: 8px;
+		& &__menu {
+			margin-bottom: 25px;
+			&-play {
+				width: 55px;
+				height: 55px;
+			}
+			&-like {
+				width: 26px;
+				height: 26px;
+				& img {
+					width: 100%;
+				}
+			}
+			&-more {
+				width: 46px;
+				height: 46px;
+				& img {
+					width: 100%;
+				}
+			}
+		}
+		& &__artbox {
+			margin-bottom: 100px;
+
+			&-artist {
+				&-no {
+					margin: 0 24px 0 24px;
+				}
+				&-play {
+					margin: 0 27px 0 24px;
+				}
+				&-main {
+					gap: 24px;
+					max-width: none;
+					width: 90%;
+				}
+				&-time {
+					display: none;
+				}
+				&-options {
+					display: flex;
+					margin-right: 23px;
+					&-like {
+						display: none;
+					}
+				}
+				&-menu {
+					left: 76%;
+					top: -150%;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $_535) {
+		& &__artbox {
+			&-artist {
+				&-creator {
+					display: none;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $_375) {
+		margin-top: 373px;
+		margin-left: 7px;
+		margin-right: 7px;
+		& &__artbox {
+			&-artist {
+				padding-top: 0;
+				&-options {
+					padding-bottom: 3px;
+				}
+			}
+		}
+	}
+}

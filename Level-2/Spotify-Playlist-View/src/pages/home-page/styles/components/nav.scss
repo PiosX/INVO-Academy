@@ -1,0 +1,85 @@
+$background-color: rgba(0, 0, 0, 0.5);
+$background-color-07: rgba(0, 0, 0, 0.7);
+
+.nav {
+	position: sticky;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 84px;
+	background: $background-color;
+	padding: 0 42px;
+	z-index: 1;
+	& &__arrows {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		&-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 46px;
+			height: 46px;
+			border-radius: 50%;
+			overflow: hidden;
+			background: $background-color;
+			cursor: not-allowed;
+		}
+	}
+	& &__user {
+		position: relative;
+		width: 177px;
+		border-radius: 50px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background: $background-color-07;
+		margin-top: 5px;
+		cursor: pointer;
+		&:hover {
+			&::after {
+				content: "Julita Gomez";
+				white-space: nowrap;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				left: 65.1%;
+				top: 165%;
+				font-size: 16px;
+				font-weight: 500;
+				padding: 10px 16px;
+				background-color: rgba($color: #000000, $alpha: 0.7);
+				border-radius: 8px;
+				overflow: hidden;
+			}
+		}
+
+		&-box {
+			margin: 3px 12px 3px 3px;
+			width: 38px;
+			height: 38px;
+			border-radius: 50%;
+			overflow: hidden;
+			&-img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&-name {
+			font-size: 16px;
+			font-weight: 700;
+			margin-top: 2px;
+		}
+	}
+	@media screen and (max-width: $_834) {
+		padding: 0 8px;
+		& &__arrows {
+			&-box:last-child {
+				display: none;
+			}
+		}
+		& &__user {
+			display: none;
+		}
+	}
+}

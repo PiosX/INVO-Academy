@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INVO Academy JS Starter with Vite</title>
+</head>
+
+<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
+
+<body>
+  <div id="home-page">
+    <div class="nav">
+      <div class="nav__arrows">
+        <div class="nav__arrows-box">
+          <img class="nav__arrows-box-left-ar" src="./assets/icons/left-arrow.svg" alt="left arrow">
+        </div>
+        <div class="nav__arrows-box">
+          <img class="nav__arrows-box-right-ar" src="./assets/icons/right-arrow.svg" alt="right arrow">
+        </div>
+      </div>
+      <div class="nav__user">
+        <div class="nav__user-box">
+          <img class="nav__user-box-img" src="./assets/images/user.jpg" alt="user data">
+        </div>
+        <p class="nav__user-name">Julita Gomez</p>
+      </div>
+    </div>
+    <div class="header">
+      <div class="header__img">
+        <img src="./assets/images/background.jpg" alt="background image">
+      </div>
+      <div class="header__img-tab">
+        <img src="./assets/images/background-tab.jpg" alt="background image">
+      </div>
+      <div class="header__box">
+        <p class="header__box-text">Playlist</p>
+        <h1 class="header__box-title">Top songs of the world</h1>
+        <p class="header__box-desc">Popular songs of Dua Lipa and many many others</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content__menu">
+        <button class="content__menu-play">
+          <img class="content__menu-play-icon" src="./assets/icons/play.svg" alt="play button">
+        </button>
+        <div class="content__menu-like">
+          <img class="content__menu-like-icon" src="./assets/icons/heart.svg" alt="heart button">
+        </div>
+        <div class="content__menu-more">
+          <img class="content__menu-more-icon" src="./assets/icons/more.svg" alt="more button">
+        </div>
+      </div>
+      <div class="content__artbox">
+        <div class="content__artbox-artist">
+          <p class="content__artbox-artist-no">01</p>
+          <div class="content__artbox-artist-play">
+            <img src="./assets/icons/play-art.svg" alt="play icon" class="content__artbox-artist-play-icon">
+          </div>
+          <div class="content__artbox-artist-main">
+            <div class="content__artbox-artist-main-box">
+              <img class="content__artbox-artist-main-box-img" src="./assets/images/artists/art1.jpg"
+                alt="artist image">
+            </div>
+            <div class="content__artbox-artist-main-track">
+              <p class="content__artbox-artist-main-track-subtitle">Flowers</p>
+              <p class="content__artbox-artist-main-track-title">Flowers</p>
+            </div>
+          </div>
+          <div class="content__artbox-artist-creator">
+            <p class="content__artbox-artist-creator-text">Artists</p>
+            <p class="content__artbox-artist-creator-name">Miley Cyrus</p>
+          </div>
+          <div class="content__artbox-artist-time">
+            <p class="content__artbox-artist-time-text">Time</p>
+            <p class="content__artbox-artist-time-length">3:20</p>
+          </div>
+          <div class="content__artbox-artist-options">
+            <div class="content__artbox-artist-options-like">
+              <img class="content__artbox-artist-options-like-img" src="./assets/icons/heart.svg" alt="heart button">
+            </div>
+            <div class="content__artbox-artist-options-more more-button">
+              <img class="content__artbox-artist-options-more-img" src="./assets/icons/more.svg" alt="more button">
+            </div>
+          </div>
+          <div class="content__artbox-artist-menu" data-show="0">
+            <p class="content__artbox-artist-menu-add">Add to queue</p>
+            <div class="content__artbox-artist-menu-line"></div>
+            <div class="content__artbox-artist-menu-goto">
+              <p class="content__artbox-artist-menu-goto-text">Go to the track</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to the artist</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to album</p>
+              <p class="content__artbox-artist-menu-goto-text">Show content authors</p>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line-2"></div>
+            <div class="content__artbox-artist-menu-auth">
+              <p class="content__artbox-artist-menu-auth-text">Add to playlist</p>
+              <div class="content__artbox-artist-menu-auth-box">
+                <p class="content__artbox-artist-menu-auth-box-text">Show content authors</p>
+                <div class="content__artbox-artist-menu-auth-box-img">
+                  <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+                </div>
+              </div>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line"></div>
+            <div class="content__artbox-artist-menu-share">
+              <p class="content__artbox-artist-menu-share-text">Share</p>
+              <div class="content__artbox-artist-menu-share-img">
+                <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__artbox-artist">
+          <p class="content__artbox-artist-no">02</p>
+          <div class="content__artbox-artist-play">
+            <img src="./assets/icons/play-art.svg" alt="play icon" class="content__artbox-artist-play-icon">
+          </div>
+          <div class="content__artbox-artist-main">
+            <div class="content__artbox-artist-main-box">
+              <img class="content__artbox-artist-main-box-img" src="./assets/images/artists/art2.jpg"
+                alt="artist image">
+            </div>
+            <div class="content__artbox-artist-main-track">
+              <p class="content__artbox-artist-main-track-subtitle">Sos</p>
+              <p class="content__artbox-artist-main-track-title">Kill Bill</p>
+            </div>
+          </div>
+          <div class="content__artbox-artist-creator">
+            <p class="content__artbox-artist-creator-text">Artists</p>
+            <p class="content__artbox-artist-creator-name">Sza</p>
+          </div>
+          <div class="content__artbox-artist-time">
+            <p class="content__artbox-artist-time-text">Time</p>
+            <p class="content__artbox-artist-time-length">2:32</p>
+          </div>
+          <div class="content__artbox-artist-options">
+            <div class="content__artbox-artist-options-like">
+              <img class="content__artbox-artist-options-like-img" src="./assets/icons/heart.svg" alt="heart button">
+            </div>
+            <div class="content__artbox-artist-options-more more-button">
+              <img class="content__artbox-artist-options-more-img" src="./assets/icons/more.svg" alt="more button">
+            </div>
+          </div>
+          <div class="content__artbox-artist-menu" data-show="0">
+            <p class="content__artbox-artist-menu-add">Add to queue</p>
+            <div class="content__artbox-artist-menu-line"></div>
+            <div class="content__artbox-artist-menu-goto">
+              <p class="content__artbox-artist-menu-goto-text">Go to the track</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to the artist</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to album</p>
+              <p class="content__artbox-artist-menu-goto-text">Show content authors</p>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line-2"></div>
+            <div class="content__artbox-artist-menu-auth">
+              <p class="content__artbox-artist-menu-auth-text">Add to playlist</p>
+              <div class="content__artbox-artist-menu-auth-box">
+                <p class="content__artbox-artist-menu-auth-box-text">Show content authors</p>
+                <div class="content__artbox-artist-menu-auth-box-img">
+                  <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+                </div>
+              </div>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line"></div>
+            <div class="content__artbox-artist-menu-share">
+              <p class="content__artbox-artist-menu-share-text">Share</p>
+              <div class="content__artbox-artist-menu-share-img">
+                <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__artbox-artist">
+          <p class="content__artbox-artist-no">03</p>
+          <div class="content__artbox-artist-play">
+            <img src="./assets/icons/play-art.svg" alt="play icon" class="content__artbox-artist-play-icon">
+          </div>
+          <div class="content__artbox-artist-main">
+            <div class="content__artbox-artist-main-box">
+              <img class="content__artbox-artist-main-box-img" src="./assets/images/artists/art3.jpg"
+                alt="artist image">
+            </div>
+            <div class="content__artbox-artist-main-track">
+              <p class="content__artbox-artist-main-track-subtitle">Gemini Rights</p>
+              <p class="content__artbox-artist-main-track-title">Bad Habit</p>
+            </div>
+          </div>
+          <div class="content__artbox-artist-creator">
+            <p class="content__artbox-artist-creator-text">Artists</p>
+            <p class="content__artbox-artist-creator-name">Steve Lacy</p>
+          </div>
+          <div class="content__artbox-artist-time">
+            <p class="content__artbox-artist-time-text">Time</p>
+            <p class="content__artbox-artist-time-length">3:52</p>
+          </div>
+          <div class="content__artbox-artist-options">
+            <div class="content__artbox-artist-options-like">
+              <img class="content__artbox-artist-options-like-img" src="./assets/icons/heart.svg" alt="heart button">
+            </div>
+            <div class="content__artbox-artist-options-more more-button">
+              <img class="content__artbox-artist-options-more-img" src="./assets/icons/more.svg" alt="more button">
+            </div>
+          </div>
+          <div class="content__artbox-artist-menu" data-show="0">
+            <p class="content__artbox-artist-menu-add">Add to queue</p>
+            <div class="content__artbox-artist-menu-line"></div>
+            <div class="content__artbox-artist-menu-goto">
+              <p class="content__artbox-artist-menu-goto-text">Go to the track</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to the artist</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to album</p>
+              <p class="content__artbox-artist-menu-goto-text">Show content authors</p>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line-2"></div>
+            <div class="content__artbox-artist-menu-auth">
+              <p class="content__artbox-artist-menu-auth-text">Add to playlist</p>
+              <div class="content__artbox-artist-menu-auth-box">
+                <p class="content__artbox-artist-menu-auth-box-text">Show content authors</p>
+                <div class="content__artbox-artist-menu-auth-box-img">
+                  <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+                </div>
+              </div>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line"></div>
+            <div class="content__artbox-artist-menu-share">
+              <p class="content__artbox-artist-menu-share-text">Share</p>
+              <div class="content__artbox-artist-menu-share-img">
+                <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__artbox-artist">
+          <p class="content__artbox-artist-no">04</p>
+          <div class="content__artbox-artist-play">
+            <img src="./assets/icons/play-art.svg" alt="play icon" class="content__artbox-artist-play-icon">
+          </div>
+          <div class="content__artbox-artist-main">
+            <div class="content__artbox-artist-main-box">
+              <img class="content__artbox-artist-main-box-img" src="./assets/images/artists/art4.jpg"
+                alt="artist image">
+            </div>
+            <div class="content__artbox-artist-main-track">
+              <p class="content__artbox-artist-main-track-subtitle">Talk To Me</p>
+              <p class="content__artbox-artist-main-track-title">Talk To Me</p>
+            </div>
+          </div>
+          <div class="content__artbox-artist-creator">
+            <p class="content__artbox-artist-creator-text">Artists</p>
+            <p class="content__artbox-artist-creator-name">Mark Menday, Seb Mont</p>
+          </div>
+          <div class="content__artbox-artist-time">
+            <p class="content__artbox-artist-time-text">Time</p>
+            <p class="content__artbox-artist-time-length">2:28</p>
+          </div>
+          <div class="content__artbox-artist-options">
+            <div class="content__artbox-artist-options-like">
+              <img class="content__artbox-artist-options-like-img" src="./assets/icons/heart.svg" alt="heart button">
+            </div>
+            <div class="content__artbox-artist-options-more more-button">
+              <img class="content__artbox-artist-options-more-img" src="./assets/icons/more.svg" alt="more button">
+            </div>
+          </div>
+          <div class="content__artbox-artist-menu" data-show="0">
+            <p class="content__artbox-artist-menu-add">Add to queue</p>
+            <div class="content__artbox-artist-menu-line"></div>
+            <div class="content__artbox-artist-menu-goto">
+              <p class="content__artbox-artist-menu-goto-text">Go to the track</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to the artist</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to album</p>
+              <p class="content__artbox-artist-menu-goto-text">Show content authors</p>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line-2"></div>
+            <div class="content__artbox-artist-menu-auth">
+              <p class="content__artbox-artist-menu-auth-text">Add to playlist</p>
+              <div class="content__artbox-artist-menu-auth-box">
+                <p class="content__artbox-artist-menu-auth-box-text">Show content authors</p>
+                <div class="content__artbox-artist-menu-auth-box-img">
+                  <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+                </div>
+              </div>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line"></div>
+            <div class="content__artbox-artist-menu-share">
+              <p class="content__artbox-artist-menu-share-text">Share</p>
+              <div class="content__artbox-artist-menu-share-img">
+                <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__artbox-artist">
+          <p class="content__artbox-artist-no">05</p>
+          <div class="content__artbox-artist-play">
+            <img src="./assets/icons/play-art.svg" alt="play icon" class="content__artbox-artist-play-icon">
+          </div>
+          <div class="content__artbox-artist-main">
+            <div class="content__artbox-artist-main-box">
+              <img class="content__artbox-artist-main-box-img" src="./assets/images/artists/art5.jpg"
+                alt="artist image">
+            </div>
+            <div class="content__artbox-artist-main-track">
+              <p class="content__artbox-artist-main-track-subtitle">Sour</p>
+              <p class="content__artbox-artist-main-track-title">Good 4 u</p>
+            </div>
+          </div>
+          <div class="content__artbox-artist-creator">
+            <p class="content__artbox-artist-creator-text">Artists</p>
+            <p class="content__artbox-artist-creator-name">Olivia Rodrigo</p>
+          </div>
+          <div class="content__artbox-artist-time">
+            <p class="content__artbox-artist-time-text">Time</p>
+            <p class="content__artbox-artist-time-length">2:58</p>
+          </div>
+          <div class="content__artbox-artist-options">
+            <div class="content__artbox-artist-options-like">
+              <img class="content__artbox-artist-options-like-img" src="./assets/icons/heart.svg" alt="heart button">
+            </div>
+            <div class="content__artbox-artist-options-more more-button">
+              <img class="content__artbox-artist-options-more-img" src="./assets/icons/more.svg" alt="more button">
+            </div>
+          </div>
+          <div class="content__artbox-artist-menu" data-show="0">
+            <p class="content__artbox-artist-menu-add">Add to queue</p>
+            <div class="content__artbox-artist-menu-line"></div>
+            <div class="content__artbox-artist-menu-goto">
+              <p class="content__artbox-artist-menu-goto-text">Go to the track</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to the artist</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to album</p>
+              <p class="content__artbox-artist-menu-goto-text">Show content authors</p>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line-2"></div>
+            <div class="content__artbox-artist-menu-auth">
+              <p class="content__artbox-artist-menu-auth-text">Add to playlist</p>
+              <div class="content__artbox-artist-menu-auth-box">
+                <p class="content__artbox-artist-menu-auth-box-text">Show content authors</p>
+                <div class="content__artbox-artist-menu-auth-box-img">
+                  <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+                </div>
+              </div>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line"></div>
+            <div class="content__artbox-artist-menu-share">
+              <p class="content__artbox-artist-menu-share-text">Share</p>
+              <div class="content__artbox-artist-menu-share-img">
+                <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__artbox-artist">
+          <p class="content__artbox-artist-no">06</p>
+          <div class="content__artbox-artist-play">
+            <img src="./assets/icons/play-art.svg" alt="play icon" class="content__artbox-artist-play-icon">
+          </div>
+          <div class="content__artbox-artist-main">
+            <div class="content__artbox-artist-main-box">
+              <img class="content__artbox-artist-main-box-img" src="./assets/images/artists/art6.jpg"
+                alt="artist image">
+            </div>
+            <div class="content__artbox-artist-main-track">
+              <p class="content__artbox-artist-main-track-subtitle">Singiel</p>
+              <p class="content__artbox-artist-main-track-title">INDUSTRY BABY</p>
+            </div>
+          </div>
+          <div class="content__artbox-artist-creator">
+            <p class="content__artbox-artist-creator-text">Artists</p>
+            <p class="content__artbox-artist-creator-name">Lil Nas X</p>
+          </div>
+          <div class="content__artbox-artist-time">
+            <p class="content__artbox-artist-time-text">Time</p>
+            <p class="content__artbox-artist-time-length">3:32</p>
+          </div>
+          <div class="content__artbox-artist-options">
+            <div class="content__artbox-artist-options-like">
+              <img class="content__artbox-artist-options-like-img" src="./assets/icons/heart.svg" alt="heart button">
+            </div>
+            <div class="content__artbox-artist-options-more more-button">
+              <img class="content__artbox-artist-options-more-img" src="./assets/icons/more.svg" alt="more button">
+            </div>
+          </div>
+          <div class="content__artbox-artist-menu" data-show="0">
+            <p class="content__artbox-artist-menu-add">Add to queue</p>
+            <div class="content__artbox-artist-menu-line"></div>
+            <div class="content__artbox-artist-menu-goto">
+              <p class="content__artbox-artist-menu-goto-text">Go to the track</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to the artist</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to album</p>
+              <p class="content__artbox-artist-menu-goto-text">Show content authors</p>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line-2"></div>
+            <div class="content__artbox-artist-menu-auth">
+              <p class="content__artbox-artist-menu-auth-text">Add to playlist</p>
+              <div class="content__artbox-artist-menu-auth-box">
+                <p class="content__artbox-artist-menu-auth-box-text">Show content authors</p>
+                <div class="content__artbox-artist-menu-auth-box-img">
+                  <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+                </div>
+              </div>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line"></div>
+            <div class="content__artbox-artist-menu-share">
+              <p class="content__artbox-artist-menu-share-text">Share</p>
+              <div class="content__artbox-artist-menu-share-img">
+                <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__artbox-artist">
+          <p class="content__artbox-artist-no">07</p>
+          <div class="content__artbox-artist-play">
+            <img src="./assets/icons/play-art.svg" alt="play icon" class="content__artbox-artist-play-icon">
+          </div>
+          <div class="content__artbox-artist-main">
+            <div class="content__artbox-artist-main-box">
+              <img class="content__artbox-artist-main-box-img" src="./assets/images/artists/art7.jpg"
+                alt="artist image">
+            </div>
+            <div class="content__artbox-artist-main-track">
+              <p class="content__artbox-artist-main-track-subtitle">Fine Line</p>
+              <p class="content__artbox-artist-main-track-title">Watermelon Sugar</p>
+            </div>
+          </div>
+          <div class="content__artbox-artist-creator">
+            <p class="content__artbox-artist-creator-text">Artists</p>
+            <p class="content__artbox-artist-creator-name">Harry Styles</p>
+          </div>
+          <div class="content__artbox-artist-time">
+            <p class="content__artbox-artist-time-text">Time</p>
+            <p class="content__artbox-artist-time-length">2:54</p>
+          </div>
+          <div class="content__artbox-artist-options">
+            <div class="content__artbox-artist-options-like">
+              <img class="content__artbox-artist-options-like-img" src="./assets/icons/heart.svg" alt="heart button">
+            </div>
+            <div class="content__artbox-artist-options-more more-button">
+              <img class="content__artbox-artist-options-more-img" src="./assets/icons/more.svg" alt="more button">
+            </div>
+          </div>
+          <div class="content__artbox-artist-menu" data-show="0">
+            <p class="content__artbox-artist-menu-add">Add to queue</p>
+            <div class="content__artbox-artist-menu-line"></div>
+            <div class="content__artbox-artist-menu-goto">
+              <p class="content__artbox-artist-menu-goto-text">Go to the track</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to the artist</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to album</p>
+              <p class="content__artbox-artist-menu-goto-text">Show content authors</p>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line-2"></div>
+            <div class="content__artbox-artist-menu-auth">
+              <p class="content__artbox-artist-menu-auth-text">Add to playlist</p>
+              <div class="content__artbox-artist-menu-auth-box">
+                <p class="content__artbox-artist-menu-auth-box-text">Show content authors</p>
+                <div class="content__artbox-artist-menu-auth-box-img">
+                  <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+                </div>
+              </div>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line"></div>
+            <div class="content__artbox-artist-menu-share">
+              <p class="content__artbox-artist-menu-share-text">Share</p>
+              <div class="content__artbox-artist-menu-share-img">
+                <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__artbox-artist">
+          <p class="content__artbox-artist-no">08</p>
+          <div class="content__artbox-artist-play">
+            <img src="./assets/icons/play-art.svg" alt="play icon" class="content__artbox-artist-play-icon">
+          </div>
+          <div class="content__artbox-artist-main">
+            <div class="content__artbox-artist-main-box">
+              <img class="content__artbox-artist-main-box-img" src="./assets/images/artists/art8.jpg"
+                alt="artist image">
+            </div>
+            <div class="content__artbox-artist-main-track">
+              <p class="content__artbox-artist-main-track-subtitle">Fine Line</p>
+              <p class="content__artbox-artist-main-track-title">Always</p>
+            </div>
+          </div>
+          <div class="content__artbox-artist-creator">
+            <p class="content__artbox-artist-creator-text">Artists</p>
+            <p class="content__artbox-artist-creator-name">Isak Daniels</p>
+          </div>
+          <div class="content__artbox-artist-time">
+            <p class="content__artbox-artist-time-text">Time</p>
+            <p class="content__artbox-artist-time-length">3:33</p>
+          </div>
+          <div class="content__artbox-artist-options">
+            <div class="content__artbox-artist-options-like">
+              <img class="content__artbox-artist-options-like-img" src="./assets/icons/heart.svg" alt="heart button">
+            </div>
+            <div class="content__artbox-artist-options-more more-button">
+              <img class="content__artbox-artist-options-more-img" src="./assets/icons/more.svg" alt="more button">
+            </div>
+          </div>
+          <div class="content__artbox-artist-menu" data-show="0">
+            <p class="content__artbox-artist-menu-add">Add to queue</p>
+            <div class="content__artbox-artist-menu-line"></div>
+            <div class="content__artbox-artist-menu-goto">
+              <p class="content__artbox-artist-menu-goto-text">Go to the track</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to the artist</p>
+              <p class="content__artbox-artist-menu-goto-text">Go to album</p>
+              <p class="content__artbox-artist-menu-goto-text">Show content authors</p>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line-2"></div>
+            <div class="content__artbox-artist-menu-auth">
+              <p class="content__artbox-artist-menu-auth-text">Add to playlist</p>
+              <div class="content__artbox-artist-menu-auth-box">
+                <p class="content__artbox-artist-menu-auth-box-text">Show content authors</p>
+                <div class="content__artbox-artist-menu-auth-box-img">
+                  <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+                </div>
+              </div>
+            </div>
+            <div class="content__artbox-artist-menu-line fix-line"></div>
+            <div class="content__artbox-artist-menu-share">
+              <p class="content__artbox-artist-menu-share-text">Share</p>
+              <div class="content__artbox-artist-menu-share-img">
+                <img src="./assets/icons/arrow-r.svg" alt="right arrow icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-m">
+      <div class="footer-m__box">
+        <div class="footer-m__box-home">
+          <img src="./assets/icons/home.svg" alt="home button" class="footer-m__box-home-img">
+        </div>
+        <p class="footer-m__box-text">Home</p>
+      </div>
+      <div class="footer-m__box">
+        <div class="footer-m__box-search">
+          <img src="./assets/icons/search.svg" alt="search button" class="footer-m__box-search-img">
+        </div>
+        <p class="footer-m__box-text">Search</p>
+      </div>
+      <div class="footer-m__box">
+        <div class="footer-m__box-library">
+          <img src="./assets/icons/library.svg" alt="library button" class="footer-m__box-library-img">
+        </div>
+        <p class="footer-m__box-text">Library</p>
+      </div>
+      <div class="footer-m__box">
+        <div class="footer-m__box-like">
+          <img src="./assets/icons/menu-heart.svg" alt="like button" class="footer-m__box-like-img">
+        </div>
+        <p class="footer-m__box-text">Liked songs</p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__menu">
+        <div class="footer__menu-box">
+          <div class="footer__menu-box-title">Business</div>
+          <ul class="footer__menu-box-list">
+            <li class="footer__menu-box-list-item">Information</li>
+            <li class="footer__menu-box-list-item">Work</li>
+            <li class="footer__menu-box-list-item">Address</li>
+          </ul>
+        </div>
+        <div class="footer__menu-box">
+          <div class="footer__menu-box-title">Society</div>
+          <ul class="footer__menu-box-list">
+            <li class="footer__menu-box-list-item">Advertisement</li>
+            <li class="footer__menu-box-list-item">Investors</li>
+            <li class="footer__menu-box-list-item">Suppliers</li>
+          </ul>
+        </div>
+        <div class="footer__menu-box">
+          <div class="footer__menu-box-title">Useful links</div>
+          <ul class="footer__menu-box-list">
+            <li class="footer__menu-box-list-item">Help</li>
+            <li class="footer__menu-box-list-item">Contact</li>
+            <li class="footer__menu-box-list-item">Mobile application</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__media">
+        <div class="footer__media-box">
+          <img class="footer__media-box-img" src="./assets/icons/fb.svg" alt="facebook">
+        </div>
+        <div class="footer__media-box">
+          <img class="footer__media-box-img" src="./assets/icons/twitter.svg" alt="twitter">
+        </div>
+        <div class="footer__media-box">
+          <img class="footer__media-box-img" src="./assets/icons/insta.svg" alt="instagram">
+        </div>
+      </div>
+      <div class="footer__line"></div>
+      <p class="footer__copyrights">© 2023 Spotify</p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/global-scripts/main.js"></script>
+  <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
+</body>
+
+</html>
