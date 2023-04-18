@@ -1,0 +1,14 @@
+@mixin price($size, $weight) {
+	display: flex;
+	align-items: baseline;
+	gap: 4px;
+	&-price {
+		font-size: $size;
+		font-weight: $weight;
+	}
+	&-term {
+		font-size: 12px;
+		font-weight: 400;
+		opacity: 0.5;
+	}
+}
