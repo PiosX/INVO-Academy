@@ -1,3 +1,4 @@
+$_834: 834px;
 $_375: 375px;
 
 #home-page {
@@ -6,6 +7,7 @@ $_375: 375px;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 0 15px;
 }
 
 .order {
@@ -16,11 +18,11 @@ $_375: 375px;
 	background: var(--color-white);
 	border-radius: 30px;
 	overflow: hidden;
-	padding: 50px;
+	padding: 50px 50px 52px 50px;
 	& &__wrap-up {
 		display: flex;
 		flex-direction: column;
-		gap: 6px;
+		gap: 5px;
 		padding: 0;
 		&-title {
 			margin: 0;
@@ -59,7 +61,7 @@ $_375: 375px;
 				display: flex;
 				flex-direction: column;
 				justify-content: start;
-				gap: 6px;
+				gap: 7px;
 				&-name {
 					width: 110%;
 					margin: 0;
@@ -94,6 +96,7 @@ $_375: 375px;
 				margin: 0;
 				font-size: 18px;
 				font-weight: 400;
+				margin-bottom: -1px;
 			}
 		}
 	}
@@ -104,11 +107,11 @@ $_375: 375px;
 		background: var(--color-black-600);
 	}
 	& &__summary {
-		margin-top: 25px;
+		margin-top: 26px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
+		gap: 23px;
 		&-cost {
 			display: flex;
 			flex-direction: column;
@@ -168,7 +171,7 @@ $_375: 375px;
 			display: none;
 			align-items: center;
 			width: 100%;
-			height: 51px;
+			height: 52px;
 			& img {
 				display: block;
 				width: 40px;
@@ -213,9 +216,14 @@ $_375: 375px;
 			border: 1px solid var(--color-black-600);
 		}
 	}
+	@media screen and (max-width: $_834) {
+		margin: 0 10px;
+	}
+
 	@media screen and (max-width: $_375) {
 		max-width: none;
 		max-height: none;
+		border-radius: 0;
 		width: 100vw;
 		min-height: 100vh;
 		padding: 50px 24px;
@@ -252,6 +260,11 @@ $_375: 375px;
 		& &__cancel {
 			margin-top: 11px;
 			font-size: 14px;
+		}
+		& &__primary-btn {
+			&-loader {
+				height: 50px;
+			}
 		}
 	}
 }
