@@ -107,7 +107,7 @@
 			cursor: pointer;
 			transition: background 0.3s;
 			&:hover {
-				background: rgba($color: #ffffff, $alpha: 0.3);
+				background: var(--color-white-rgb-03);
 			}
 		}
 	}

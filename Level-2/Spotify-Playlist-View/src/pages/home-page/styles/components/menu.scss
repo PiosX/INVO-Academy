@@ -1,0 +1,124 @@
+.content__artbox-artist-menu {
+	position: absolute;
+	left: 87%;
+	top: 290%;
+	transform: translate(-50%, -50%);
+	max-width: 248px;
+	height: 368px;
+	width: 100%;
+	background: var(--color-black-footer);
+	color: var(--color-text);
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 32px 33px 32px 32px;
+	font-size: 14px;
+	font-weight: 500;
+	z-index: 1;
+	& &-line {
+		width: 100%;
+		height: 1px;
+		background: var(--color-black-active);
+		margin: 16px 0 10px;
+	}
+	.fix-line {
+		margin: 6px 0 0;
+	}
+	.fix-line-2 {
+		margin: 8px 0 0;
+	}
+	& &-add {
+		transition: background 0.3s;
+		padding: 16px 16px;
+		margin: -16px -16px;
+		border-radius: 8px;
+		overflow: hidden;
+		&:hover {
+			background: var(--color-black-button);
+		}
+	}
+	& &-goto {
+		display: flex;
+		flex-direction: column;
+		gap: 3px;
+		&-text {
+			padding: 8px 16px;
+			margin: 0 -16px;
+			border-radius: 8px;
+			overflow: hidden;
+			transition: background 0.3s;
+			&:hover {
+				background: var(--color-black-button);
+			}
+		}
+	}
+	& &-auth {
+		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
+		&-text {
+			padding: 8px 16px;
+			margin: 0 -16px;
+			border-radius: 8px;
+			overflow: hidden;
+			transition: background 0.3s;
+			&:hover {
+				background: var(--color-black-button);
+			}
+		}
+		&-box {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 16px;
+			margin: 0 -16px;
+			border-radius: 8px;
+			overflow: hidden;
+			transition: background 0.3s;
+			&:hover {
+				background: var(--color-black-button);
+			}
+			&-img {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			&-text {
+				padding: 8px 16px;
+				margin: 0 -16px;
+			}
+		}
+	}
+	& &-share {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 16px;
+		margin: 0 -16px;
+		margin-top: 9px;
+		border-radius: 8px;
+		overflow: hidden;
+		transition: background 0.3s;
+		&:hover {
+			background: var(--color-black-button);
+		}
+		&-text {
+			padding: 8px 16px;
+			margin: 0 -16px;
+		}
+		&-img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	&[data-show="0"] {
+		display: none;
+	}
+	&[data-show="1"] {
+		display: block;
+	}
+	@media screen and (max-width: $_834) {
+		left: 76%;
+		top: -150%;
+	}
+}
