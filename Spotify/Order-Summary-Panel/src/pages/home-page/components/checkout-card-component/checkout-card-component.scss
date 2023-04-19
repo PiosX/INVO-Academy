@@ -135,27 +135,18 @@ $_280: 280px;
 		background: var(--color-green-500);
 		transition: background 0.3s;
 		cursor: pointer;
-		&:hover {
-			background: var(--color-green-700);
-		}
 		&:active {
 			background: var(--color-green-900);
 		}
-		&-text {
-			display: block;
-			font-size: 16px;
-			font-weight: 700;
-			margin: 17px 0;
-		}
-		&-loader {
-			display: none;
-			align-items: center;
-			height: 52.2px;
-			& img {
-				display: block;
-				line-height: 40px;
-				height: 40px;
+		&:disabled {
+			opacity: 0.5;
+			&:hover {
+				cursor: not-allowed;
 			}
+		}
+		&:not(:disabled):hover {
+			cursor: pointer;
+			background-color: var(--primary-color-dark);
 		}
 		&[data-loading="1"] {
 			.order__primary-btn-text {
@@ -173,6 +164,22 @@ $_280: 280px;
 				display: none;
 			}
 		}
+		&-text {
+			display: block;
+			font-size: 16px;
+			font-weight: 700;
+			margin: 17px 0;
+		}
+		&-loader {
+			display: none;
+			align-items: center;
+			height: 52.2px;
+			& img {
+				display: block;
+				line-height: 40px;
+				height: 40px;
+			}
+		}
 	}
 	& &__cancel {
 		width: 100%;
@@ -187,7 +194,8 @@ $_280: 280px;
 		font-weight: 700;
 		cursor: pointer;
 		transition: color 0.3s, border 0.3s;
-		&:hover {
+		&:not(:disabled):hover {
+			cursor: pointer;
 			border: 1px solid var(--color-background-700);
 			color: var(--color-background-700);
 		}
