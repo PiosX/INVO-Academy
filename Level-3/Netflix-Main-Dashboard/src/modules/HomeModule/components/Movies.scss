@@ -1,0 +1,48 @@
+.movies-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+	.movies-holder {
+		.movies {
+			&__desc {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 56px;
+				&-title {
+					font-size: 24px;
+					font-weight: 600;
+					letter-spacing: -0.01em;
+				}
+				&-all {
+					display: flex;
+					gap: 8px;
+					&-link {
+						color: var(--color-white);
+						font-size: 16px;
+						font-weight: 600;
+						letter-spacing: -0.01em;
+					}
+					&-arrow {
+						width: 16px;
+						height: 16px;
+					}
+				}
+			}
+			&__list {
+				display: flex;
+				flex-wrap: nowrap;
+				width: max-content;
+				gap: 8px;
+				padding-left: 56px;
+				.movie {
+					border-radius: 16px;
+					overflow: hidden;
+					&__img {
+						width: 256px;
+					}
+				}
+			}
+		}
+	}
+}

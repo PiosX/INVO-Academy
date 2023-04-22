@@ -1,0 +1,18 @@
+/// Root Styles file
+/// Here we define all the root variables we need for our project.
+/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
+
+:root {
+	--color-white: #ffffff;
+	--color-black-900: #000000;
+	--color-black-800: #1a1a1a;
+	--color-black-700: #242424;
+	--color-black-600: #2d2d2d;
+	--color-black-500: #767676;
+	--color-special: #de4129;
+}
+
+:root {
+	--color-black-rgba: rgba(0, 0, 0, 0);
+	--color-white-rgba: rgba(255, 255, 255, 0.2);
+}
