@@ -4,7 +4,7 @@ import { moviesTopSeries } from "../data/movie-data";
 
 const TopSeries = () => {
 	return (
-		<div className="top-today">
+		<div className="top-today top-movies">
 			<TVSeries
 				title="Top 10 seriali w Polsce dzisiaj"
 				items={moviesTopSeries}

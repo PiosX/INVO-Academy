@@ -39,6 +39,7 @@
 		padding-left: 64px;
 		width: 100%;
 		height: 64px;
+		line-height: 10px;
 		&-logo {
 			width: 57px;
 		}
@@ -50,7 +51,7 @@
 		gap: 24px;
 		padding-left: 64px;
 		margin-top: 130px;
-		margin-bottom: 88px;
+		margin-bottom: 70px;
 		&-top {
 			display: flex;
 			align-items: center;
@@ -73,13 +74,14 @@
 					}
 					&--16 {
 						font-size: 16px;
+						line-height: 15px;
 					}
 				}
 			}
 			&-desc {
 				font-size: 24px;
 				font-weight: 700;
-				letter-spacing: -0.01em;
+				letter-spacing: -0.029em;
 				margin: 0;
 			}
 		}
@@ -93,30 +95,36 @@
 			font-weight: 500;
 			letter-spacing: -0.01em;
 			line-height: 21.6px;
+			margin-top: -4px;
 		}
 		&-buttons {
 			display: flex;
 			gap: 16px;
-			margin-top: 16px;
+			margin-top: 18px;
 			&-play {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				gap: 8px;
+				gap: 7px;
 				width: 170px;
 				height: 56px;
 				background: var(--color-white);
 				border-radius: 444px;
 				cursor: pointer;
+				transition: background 0.3s;
+				&:hover {
+					background: var(--color-white-800);
+				}
 				&-box {
 					width: 20px;
 					height: 20px;
+					margin-left: -1px;
 				}
 				&-text {
 					color: var(--color-black-900);
 					font-size: 16px;
 					font-weight: 600;
-					letter-spacing: -0.01em;
+					letter-spacing: -0.03em;
 				}
 			}
 			&-more {
@@ -130,24 +138,156 @@
 				border-radius: 444px;
 				overflow: hidden;
 				cursor: pointer;
-				&::before {
-					content: "";
-					position: absolute;
-					width: 100%;
-					height: 100%;
-					background: var(--color-white-rgba);
-					backdrop-filter: blur(4px);
-					z-index: -1;
+				background: var(--color-white-rgba);
+				backdrop-filter: blur(4px);
+				transition: background 0.3s;
+				&:hover {
+					background: var(--color-white-rgba-03);
 				}
 				&-box {
 					width: 20px;
 					height: 20px;
+					margin-left: -1px;
 				}
 				&-text {
 					font-size: 16px;
 					font-weight: 600;
-					letter-spacing: -0.01em;
+					letter-spacing: -0.03em;
 				}
+			}
+		}
+	}
+	@media screen and (max-width: $_834) {
+		& &__bgc {
+			width: 1440px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		& &__nav {
+			padding-left: 32px;
+		}
+		& &__content {
+			padding-left: 32px;
+			margin-bottom: 71px;
+			&-title {
+				width: 425px;
+			}
+			&-desc {
+				letter-spacing: -0.023em;
+			}
+			&-buttons {
+				margin-top: 17px;
+			}
+		}
+	}
+	@media screen and (max-width: $_500) {
+		& &__content {
+			&-title {
+				width: 315px;
+			}
+			&-buttons {
+				&-play {
+					width: 135px;
+				}
+				&-more {
+					width: 170px;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $_375) {
+		& &__bgc {
+			width: 950px;
+			&::before {
+				height: 100px;
+			}
+			&::after {
+				display: none;
+			}
+		}
+		& &__nav {
+			padding-left: 8px;
+		}
+		& &__content {
+			margin-top: 214px;
+			padding-left: 8px;
+			gap: 14px;
+			margin-bottom: 40px;
+			&-title {
+				width: 269px;
+			}
+			&-top {
+				&-box {
+					width: 32px;
+					height: 32px;
+					&-text {
+						&--10 {
+							font-size: 8px;
+						}
+						&--16 {
+							font-size: 12px;
+						}
+					}
+				}
+				&-desc {
+					font-size: 16px;
+				}
+			}
+			&-desc {
+				font-size: 14px;
+				line-height: 17px;
+				margin-top: -2px;
+				letter-spacing: -0.025em;
+				&-span {
+					white-space: pre;
+				}
+			}
+			&-buttons {
+				margin-top: 9px;
+				gap: 11px;
+				&-play {
+					width: 122px;
+					&-text {
+						margin-top: 20px;
+					}
+				}
+				&-more {
+					width: 184px;
+					&-text {
+						margin-top: 20px;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $_350) {
+		& &__content {
+			padding-right: 8px;
+			&-buttons {
+				&-play {
+					width: 110px;
+					&-text {
+						font-size: 14px;
+						margin-top: 15px;
+					}
+				}
+				&-more {
+					width: 140px;
+					&-box {
+						margin-left: 0;
+					}
+					&-text {
+						font-size: 13px;
+						margin-top: 17px;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: $_280) {
+		& &__content {
+			&-title {
+				width: 260px;
 			}
 		}
 	}

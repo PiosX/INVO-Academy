@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./Header.scss";
-
 import netflixImg from "../../../assets/images/netflix.svg";
 import play from "../../../assets/images/play-header.svg";
 import more from "../../../assets/images/more-header.svg";
@@ -51,7 +49,10 @@ const Header = () => {
 				<div className="header__content-desc">
 					Makabrycznie bystra i sarkastyczna Wednesday Addams prowadzi
 					śledztwo w sprawie serii zabójstw, przysparzając sobie
-					nowych przyjaciół i wrogów w Akademii Nevermore.
+					nowych przyjaciół i wrogów{" "}
+					<span className="header__content-desc-span">
+						w Akademii Nevermore.
+					</span>
 				</div>
 				<div className="header__content-buttons">
 					<div className="header__content-buttons-play">

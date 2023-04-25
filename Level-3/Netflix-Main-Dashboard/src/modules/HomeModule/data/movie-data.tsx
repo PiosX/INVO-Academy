@@ -5,6 +5,13 @@ import peaky from "../../../assets/images/movies/peaky.jpg";
 import office from "../../../assets/images/movies/office.jpg";
 import lucifer from "../../../assets/images/movies/lucyfer.jpg";
 
+import breakingBadT from "../../../assets/images/movies-top/breakingBadT.jpg";
+import twdT from "../../../assets/images/movies-top/twdT.jpg";
+import vikingsT from "../../../assets/images/movies-top/vikingsT.jpg";
+import peakyT from "../../../assets/images/movies-top/peakyT.jpg";
+import officeT from "../../../assets/images/movies-top/office-t.jpg";
+import luciferT from "../../../assets/images/movies-top/lucyferT.jpg";
+
 const moviesReviewed = [
 	{
 		id: "m1",
@@ -65,45 +72,45 @@ const moviesWatchAgain = [
 ];
 
 const moviesTopToday = [
-	{ id: "1", img: office, alt: "The Office" },
+	{ id: "1", img: officeT, alt: "The Office" },
 	{
 		id: "2",
-		img: breakingBad,
+		img: breakingBadT,
 		alt: "Breaking Bad",
 	},
-	{ id: "3", img: twd, alt: "The Walking Dead" },
-	{ id: "4", img: vikings, alt: "Vikings" },
-	{ id: "5", img: peaky, alt: "Peaky Blinders" },
-	{ id: "6", img: lucifer, alt: "Lucifer" },
+	{ id: "3", img: twdT, alt: "The Walking Dead" },
+	{ id: "4", img: vikingsT, alt: "Vikings" },
+	{ id: "5", img: peakyT, alt: "Peaky Blinders" },
+	{ id: "6", img: luciferT, alt: "Lucifer" },
 	{
 		id: "7",
-		img: breakingBad,
+		img: breakingBadT,
 		alt: "Breaking Bad",
 	},
-	{ id: "8", img: office, alt: "The Office" },
-	{ id: "9", img: twd, alt: "The Walking Dead" },
-	{ id: "10", img: vikings, alt: "Vikings" },
+	{ id: "8", img: officeT, alt: "The Office" },
+	{ id: "9", img: twdT, alt: "The Walking Dead" },
+	{ id: "10", img: vikingsT, alt: "Vikings" },
 ];
 
 const moviesTopSeries = [
-	{ id: "11", img: twd, alt: "The Walking Dead" },
-	{ id: "12", img: vikings, alt: "Vikings" },
+	{ id: "11", img: twdT, alt: "The Walking Dead" },
+	{ id: "12", img: vikingsT, alt: "Vikings" },
 	{
 		id: "13",
-		img: breakingBad,
+		img: breakingBadT,
 		alt: "Breaking Bad",
 	},
-	{ id: "14", img: office, alt: "The Office" },
-	{ id: "15", img: lucifer, alt: "Lucifer" },
-	{ id: "16", img: vikings, alt: "Vikings" },
-	{ id: "17", img: peaky, alt: "Peaky Blinders" },
-	{ id: "18", img: twd, alt: "The Walking Dead" },
+	{ id: "14", img: officeT, alt: "The Office" },
+	{ id: "15", img: luciferT, alt: "Lucifer" },
+	{ id: "16", img: vikingsT, alt: "Vikings" },
+	{ id: "17", img: peakyT, alt: "Peaky Blinders" },
+	{ id: "18", img: twdT, alt: "The Walking Dead" },
 	{
 		id: "19",
-		img: breakingBad,
+		img: breakingBadT,
 		alt: "Breaking Bad",
 	},
-	{ id: "20", img: office, alt: "The Office" },
+	{ id: "20", img: officeT, alt: "The Office" },
 ];
 
 export {

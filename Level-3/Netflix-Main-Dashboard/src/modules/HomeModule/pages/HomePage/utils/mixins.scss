@@ -1,0 +1,47 @@
+@mixin swipe-arrows($height) {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 200px;
+	// height: 164px;
+	height: $height;
+	background: linear-gradient(
+		270deg,
+		var(--color-black-900) 0%,
+		var(--color-black-rgba) 100%
+	);
+	&--left {
+		left: 0;
+		transform: matrix(-1, 0, 0, 1, 0, 0);
+		display: none !important; //ten jeden raz musiałem go użyć
+	}
+	&--right {
+		right: 0;
+	}
+	&-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 48px;
+		height: 48px;
+		margin-right: 36px;
+		border-radius: 50%;
+		overflow: hidden;
+		background: var(--color-white-rgba);
+		backdrop-filter: blur(4.8px);
+		cursor: pointer;
+		&-img {
+			width: 16px;
+			height: 16px;
+		}
+	}
+	@media screen and (max-width: $_834) {
+		&-button {
+			margin-right: 27px;
+		}
+	}
+	@media screen and (max-width: $_375) {
+		display: none;
+	}
+}

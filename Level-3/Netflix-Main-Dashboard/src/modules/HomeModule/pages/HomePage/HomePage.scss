@@ -1,5 +1,8 @@
+@import "./utils/media.scss";
+@import "./utils/mixins.scss";
 @import "./../../components/Header.scss";
 @import "./../../components/Movies.scss";
+@import "./../../components/TopMovies.scss";
 
 .home-page {
 	position: relative;

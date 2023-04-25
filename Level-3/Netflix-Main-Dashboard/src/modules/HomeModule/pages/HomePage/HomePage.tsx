@@ -19,6 +19,8 @@ export const HomePage: React.FC = () => {
 				<Reviewed />
 				<Popular />
 				<WatchAgain />
+			</div>
+			<div className="top-movies-wrapper">
 				<TopToday />
 				<TopSeries />
 			</div>
