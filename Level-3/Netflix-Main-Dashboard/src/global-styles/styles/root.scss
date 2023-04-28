@@ -5,11 +5,14 @@
 :root {
 	--color-white: #ffffff;
 	--color-white-800: #e8e8e8;
+	--color-white-700: #808080;
 
 	--color-black-900: #000000;
 	--color-black-800: #1a1a1a;
 	--color-black-700: #242424;
 	--color-black-600: #2d2d2d;
+	--color-black-560: #353535;
+	--color-black-550: #575757;
 	--color-black-500: #767676;
 	--color-special: #de4129;
 }
@@ -22,4 +25,8 @@
 	--color-top1: #e7bf35;
 	--color-top2: #909090;
 	--color-top3: #7a5235;
+}
+
+:root {
+	--swiper-theme-color: #ffffff;
 }

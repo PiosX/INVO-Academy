@@ -11,6 +11,7 @@ const Popular = () => {
 				items={moviesPopular}
 				component={<SeeAll />}
 				counter={false}
+				isTopList={false}
 			/>
 		</div>
 	);

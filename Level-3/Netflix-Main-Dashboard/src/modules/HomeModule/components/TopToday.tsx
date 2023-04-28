@@ -10,6 +10,7 @@ const TopToday = () => {
 				items={moviesTopToday}
 				component={<div></div>}
 				counter={true}
+				isTopList={true}
 			/>
 		</div>
 	);

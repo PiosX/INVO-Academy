@@ -11,6 +11,7 @@ const WatchAgain = () => {
 				items={moviesWatchAgain}
 				component={<SeeAll />}
 				counter={false}
+				isTopList={false}
 			/>
 		</div>
 	);

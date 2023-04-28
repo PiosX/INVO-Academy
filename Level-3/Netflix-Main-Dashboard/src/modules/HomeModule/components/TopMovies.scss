@@ -25,13 +25,13 @@
 			}
 		}
 		&__list {
-			display: flex;
-			gap: 56px;
+			// display: flex;
+			// gap: 56px;
 			padding-left: 56px;
-			div {
-				display: flex;
-				gap: 24px;
-			}
+			// div {
+			// 	display: flex;
+			// 	gap: 24px;
+			// }
 			&-box {
 				@include swipe-arrows(224px);
 			}
@@ -97,7 +97,7 @@
 					}
 				}
 				div {
-					gap: 12px;
+					gap: 13px;
 				}
 				&-box {
 					display: none !important; //musiałem!

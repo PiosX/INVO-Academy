@@ -1,3 +1,28 @@
+@mixin mark($top) {
+	position: absolute;
+	top: $top;
+	transform: translateY(-50%);
+	background: var(--color-white);
+	border-radius: 8px;
+	&-text {
+		margin: 0;
+		padding: 4px 8px 6px 8px;
+		white-space: nowrap;
+		font-size: 12px;
+		font-weight: 500;
+		color: var(--color-black-500);
+	}
+	&-polygon {
+		position: absolute;
+		left: 50%;
+		top: 112%;
+		transform: translate(-50%, -50%);
+		clip-path: polygon(100% 0, 0 0, 50% 100%);
+		width: 14px;
+		height: 6px;
+		background: var(--color-white);
+	}
+}
 @mixin swipe-arrows($height) {
 	position: absolute;
 	display: flex;

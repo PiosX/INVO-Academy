@@ -10,6 +10,7 @@ const TopSeries = () => {
 				items={moviesTopSeries}
 				component={<div></div>}
 				counter={true}
+				isTopList={true}
 			/>
 		</div>
 	);

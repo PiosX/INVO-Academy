@@ -1,0 +1,122 @@
+// Stylowanie domyślnej nawigacji swiper'a
+.swiper {
+	width: 100%;
+	overflow: visible;
+	& &__item {
+		position: relative;
+		width: 256px;
+		height: 164px;
+		transition: 0.5s;
+
+		img {
+			border-radius: 16px;
+			overflow: hidden;
+		}
+		&:hover {
+			width: 360px;
+			img {
+				height: 191px;
+				border-radius: 16px 16px 0 0;
+			}
+		}
+	}
+	& &-button {
+		&-disabled {
+			display: none !important;
+		}
+		&-next {
+			display: flex;
+			justify-content: center;
+			width: 48px;
+			height: 48px;
+			background: var(--color-white-rgba);
+			backdrop-filter: blur(4.8px);
+			border-radius: 50%;
+			overflow: hidden;
+			right: var(--swiper-navigation-sides-offset, 36px);
+			top: var(--swiper-navigation-top-offset, 48%);
+			&:hover {
+				background: var(--color-white-rgba-03);
+			}
+			&::after {
+				display: flex;
+				justify-content: center;
+				width: 16px;
+				height: 11px;
+				font-size: 11px;
+				margin-left: 1px;
+			}
+		}
+		&-prev {
+			width: 48px;
+			height: 48px;
+			background: var(--color-white-rgba);
+			backdrop-filter: blur(4.8px);
+			border-radius: 50%;
+			overflow: hidden;
+			left: var(--swiper-navigation-sides-offset, -20px);
+			top: var(--swiper-navigation-top-offset, 48%);
+			&:hover {
+				background: var(--color-white-rgba-03);
+			}
+			&::after {
+				display: flex;
+				justify-content: center;
+				width: 16px;
+				height: 11px;
+				font-size: 11px;
+				margin-right: 1px;
+			}
+		}
+	}
+	@media screen and (max-width: $_834) {
+		& &-button {
+			&-next {
+				right: var(--swiper-navigation-sides-offset, 27px);
+			}
+			&-prev {
+				left: var(--swiper-navigation-sides-offset, -11px);
+			}
+		}
+	}
+	@media screen and (max-width: $_375) {
+		& &__item {
+			width: 218px;
+			height: 164px;
+			transition: 0.5s;
+			&:hover {
+				width: 218px;
+			}
+		}
+		& &-button {
+			&-next {
+				display: none;
+			}
+			&-prev {
+				display: none;
+			}
+		}
+	}
+}
+
+.swipertop {
+	width: 100%;
+	overflow: visible;
+	& &__item {
+		display: flex;
+		gap: 24px;
+		width: auto;
+	}
+
+	.swiper-button-next {
+		top: var(--swiper-navigation-top-offset, 49%);
+	}
+	.swiper-button-prev {
+		top: var(--swiper-navigation-top-offset, 49%);
+	}
+	@media screen and (max-width: $_280) {
+		& &__item {
+			margin-right: 15px !important;
+		}
+	}
+}

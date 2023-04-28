@@ -11,6 +11,7 @@ const Reviewed = () => {
 				items={moviesReviewed}
 				component={<SeeAll />}
 				counter={false}
+				isTopList={false}
 			/>
 		</div>
 	);
