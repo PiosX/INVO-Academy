@@ -1,0 +1,28 @@
+.generator {
+	max-width: 410px;
+	height: 526px;
+	width: 100%;
+	padding: 40px 24px 24px 24px;
+	background: var(--color-white);
+	border-radius: 12px;
+	overflow: hidden;
+	margin: 0 16px 0 17px;
+	& &__title {
+		font-size: 24px;
+		font-weight: 700;
+		margin: 0;
+		letter-spacing: -0.02em;
+		margin-top: 3px;
+	}
+	@media screen and (max-width: 834px) {
+		max-width: none;
+		height: 418px;
+		padding: 40px 16px 24px 16px;
+		& &__title {
+			margin-top: -5px;
+		}
+	}
+	@media screen and (max-width: 375px) {
+		height: 484px;
+	}
+}

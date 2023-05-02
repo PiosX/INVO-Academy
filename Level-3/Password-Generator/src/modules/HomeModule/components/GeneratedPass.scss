@@ -1,0 +1,40 @@
+.generator__password {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 56px;
+	border: 1px solid var(--color-stroke);
+	border-radius: 12px;
+	overflow: hidden;
+	padding-left: 20px;
+	padding-right: 23px;
+	margin-top: 23px;
+	& &-gen {
+		&-text {
+			margin: 0;
+			font-size: 16px;
+			font-weight: 700;
+			letter-spacing: -0.02em;
+		}
+	}
+	& &-img {
+		cursor: pointer;
+		margin-top: 3px;
+	}
+	@media screen and (max-width: 834px) {
+		margin-top: 16px;
+		height: 54px;
+		& &-gen {
+			&-text {
+				margin-top: 2px;
+			}
+		}
+	}
+	@media screen and (max-width: 375px) {
+		& &-gen {
+			&-text {
+				margin-top: 0;
+			}
+		}
+	}
+}

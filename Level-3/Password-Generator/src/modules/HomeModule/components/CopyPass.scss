@@ -1,0 +1,38 @@
+.generator__copy {
+	width: 100%;
+	margin-top: 23px;
+	& &-password {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		background: var(--color-black);
+		border: none;
+		border-radius: 12px;
+		overflow: hidden;
+		transition: background 0.3s;
+		cursor: pointer;
+		&-text {
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: -0.02em;
+			color: var(--color-white);
+			padding: 18.5px 0;
+		}
+		&:hover {
+			background: var(--color-hover);
+		}
+	}
+	@media screen and (max-width: 834px) {
+		margin-top: 24px;
+		& &-password {
+			&-text {
+				padding: 19.9px 0;
+			}
+		}
+	}
+	@media screen and (max-width: 375px) {
+		margin-top: 23px;
+	}
+}

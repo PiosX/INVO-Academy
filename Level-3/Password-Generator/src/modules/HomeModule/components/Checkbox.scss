@@ -1,0 +1,64 @@
+.generator__select {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 33px;
+	& &-box {
+		&-input {
+			position: relative;
+			cursor: pointer;
+			&[type="checkbox"] {
+				appearance: none;
+				background-color: #fff;
+				margin: 0;
+				width: 18px;
+				height: 18px;
+				border: 1px solid var(--color-stroke);
+				border-radius: 6px;
+				transform: translateY(0.2em);
+				margin-right: 12px;
+			}
+			&[type="checkbox"]:checked {
+				position: relative;
+				background: var(--color-primary);
+				border: 1px solid var(--color-primary);
+				&::after {
+					content: "......";
+					color: transparent;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					background-image: url("../../../assets/images/checked.svg");
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+			}
+		}
+		&-text {
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: -0.02em;
+			color: var(--color-body);
+		}
+	}
+	@media screen and (max-width: 834px) {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1.92fr;
+		margin-top: 25px;
+		height: 55px;
+		white-space: nowrap;
+		& &-box:nth-child(2) {
+			grid-row-start: 2;
+		}
+	}
+	@media screen and (max-width: 420px) {
+		display: flex;
+		height: auto;
+	}
+
+	// @media screen and (max-width: 375px) {
+	// 	display: flex;
+	// }
+}
